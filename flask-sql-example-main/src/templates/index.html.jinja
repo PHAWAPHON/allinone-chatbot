@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Multiple Files</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Upload Multiple Files</h1>
+    </header>
+    <main>
+        <form id="uploadForm" method="post" enctype="multipart/form-data">
+            <input type="file" name="files[]" multiple>
+            <input type="hidden" name="customer_id" value="{{ customer_id }}">
+            <input type="submit" value="Upload">
+        </form>
+    </main>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            let formData = new FormData(this);
+            fetch('/files/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    alert('Files uploaded successfully!');
+                } else {
+                    alert('Error uploading files: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while uploading the files.');
+            });
+        });
+    </script>
+</body>
+</html>

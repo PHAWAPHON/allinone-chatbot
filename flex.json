@@ -1,0 +1,112 @@
+{
+    "type": "carousel",
+    "contents": [
+      {
+        "body": {
+          "contents": [
+            {
+              "action": {
+                "label": "View",
+                "text": "Google Drive",
+                "type": "message"
+              },
+              "aspectMode": "cover",
+              "aspectRatio": "2:3",
+              "gravity": "top",
+              "size": "full",
+              "type": "image",
+              "url": "https://1000logos.net/wp-content/uploads/2021/12/Google-Calendar-Logo.png"
+            },
+            {
+              "backgroundColor": "#03303Acc",
+              "contents": [
+                {
+                  "contents": [
+                    {
+                      "align": "center",
+                      "color": "#ffffff",
+                      "margin": "none",
+                      "position": "relative",
+                      "size": "xl",
+                      "style": "normal",
+                      "text": "Google Drive",
+                      "type": "text",
+                      "weight": "bold"
+                    }
+                  ],
+                  "layout": "vertical",
+                  "type": "box"
+                },
+                {
+                  "contents": [],
+                  "layout": "baseline",
+                  "spacing": "lg",
+                  "type": "box"
+                },
+                {
+                  "action": {
+                    "label": "View",
+                    "text": "แก้ไข CalendarID",
+                    "type": "message"
+                  },
+                  "borderColor": "#ffffff",
+                  "borderWidth": "1px",
+                  "contents": [
+                    {
+                      "type": "filler"
+                    },
+                    {
+                      "contents": [
+                        {
+                          "type": "filler"
+                        },
+                        {
+                          "action": {
+                            "label": "View",
+                            "text": "แก้ไข CalendarID",
+                            "type": "message"
+                          },
+                          "color": "#ffffff",
+                          "flex": 0,
+                          "offsetTop": "-2px",
+                          "text": "แก้ไข CalendarID",
+                          "type": "text"
+                        },
+                        {
+                          "type": "filler"
+                        }
+                      ],
+                      "layout": "baseline",
+                      "spacing": "sm",
+                      "type": "box"
+                    },
+                    {
+                      "type": "filler"
+                    }
+                  ],
+                  "cornerRadius": "4px",
+                  "height": "40px",
+                  "layout": "vertical",
+                  "margin": "xxl",
+                  "spacing": "sm",
+                  "type": "box"
+                }
+              ],
+              "layout": "vertical",
+              "offsetBottom": "0px",
+              "offsetEnd": "0px",
+              "offsetStart": "0px",
+              "paddingAll": "20px",
+              "paddingTop": "18px",
+              "position": "absolute",
+              "type": "box"
+            }
+          ],
+          "layout": "vertical",
+          "paddingAll": "0px",
+          "type": "box"
+        },
+        "type": "bubble"
+      }
+    ]
+  }
