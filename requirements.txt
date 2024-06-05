@@ -1,0 +1,14 @@
+flask
+flask_cors
+flask-limiter
+flask_sqlalchemy
+redis
+google-api-python-client
+google-auth-oauthlib
+python-decouple
+celery
+kombu
+schedule
+cryptography
+pytz
+pika
