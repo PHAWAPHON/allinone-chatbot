@@ -12,3 +12,4 @@ schedule
 cryptography
 pytz
 pika
+locust
